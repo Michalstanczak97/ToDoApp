@@ -1,6 +1,7 @@
 import React from "react";
 
 function Button({children, color = "primary", className = false, small = false, outline = false, icon, onClick}) {
+    console.log(color, icon);
     const btnClasses = [
         "btn",
         outline ? `btn-outline-${color}` : `btn-${color}`,
